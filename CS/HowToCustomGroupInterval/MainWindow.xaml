@@ -1,0 +1,21 @@
+﻿<Window xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        x:Class="HowToBindToMDB.MainWindow"
+        Loaded="Window_Loaded">
+    <Grid>
+        <dxpg:PivotGridControl CustomGroupInterval="pivotGridControl1_CustomGroupInterval"
+                               HorizontalAlignment="Left" Name="pivotGridControl1"
+                               VerticalAlignment="Top">
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Name="fieldProductGroup" FieldName="ProductName" Area="RowArea"
+                                     Caption="Product Group" GroupInterval="Custom" />
+                <dxpg:PivotGridField Name="fieldProductName" FieldName="ProductName" Area="RowArea"
+                                     Caption="Product Name" />
+                <dxpg:PivotGridField Name="fieldExtendedPrice" FieldName="Extended Price"
+                                     Area="DataArea" CellFormat="c0" />
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+    </Grid>
+</Window>
