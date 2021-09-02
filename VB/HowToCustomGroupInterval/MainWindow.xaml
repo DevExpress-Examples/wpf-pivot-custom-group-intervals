@@ -1,8 +1,8 @@
-<Window xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid" 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+﻿<Window xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525"
-        x:Class="HowToBindToMDB.MainWindow" 
+        x:Class="HowToBindToMDB.MainWindow"
         Loaded="Window_Loaded">
     <Grid>
         <dxpg:PivotGridControl CustomGroupInterval="pivotGridControl1_CustomGroupInterval"
