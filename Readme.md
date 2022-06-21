@@ -19,7 +19,7 @@ This example shows how to implement custom group intervals in Pivot Grid to grou
 
 The _Product Groups_ calculated field is bound to the following expression:
 
-`Iif(Substring([Product Name], 0, 1) < 'F', 'A-E', Substring([Product Name], 0, 1) < 'T', 'F-S', 'T-Z')`
+`Iif(Substring([fieldProductName], 0, 1) &lt; 'F', 'A-E', Substring([fieldProductName], 0, 1) &lt; 'T', 'F-S', 'T-Z')`
 
 The expression groups the _Product Name_ field's values into three large ranges: A-E, F-S, and T-Z according to product's start characters.
 
