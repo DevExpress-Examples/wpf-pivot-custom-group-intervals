@@ -23,7 +23,7 @@ The _Product Groups_ calculated field is bound to the following expression:
 
 The expression groups the _Product Name_ field's values into three large ranges: A-E, F-S, and T-Z according to product's start characters.
 
-![pivot-custom-group-intervals](images/image.png)
+![pivot-custom-group-intervals](image/image.png)
 
 ## Documentaton
 
