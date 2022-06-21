@@ -25,19 +25,5 @@ Namespace HowToBindToMDB
 			pivotGridControl1.CollapseAllRows()
 		End Sub
 
-        Private Sub pivotGridControl1_CustomGroupInterval(ByVal sender As Object, _
-                                                          ByVal e As PivotCustomGroupIntervalEventArgs)
-            If (Not Object.ReferenceEquals(e.Field, fieldProductGroup)) Then
-                Return
-            End If
-            Dim productName As String = Convert.ToString(e.Value)
-            If productName.Chars(0) < "F"c Then
-                e.GroupValue = "A-E"
-            ElseIf productName.Chars(0) > "E"c AndAlso productName.Chars(0) < "T"c Then
-                e.GroupValue = "F-S"
-            ElseIf productName.Chars(0) > "S"c Then
-                e.GroupValue = "T-Z"
-            End If
-        End Sub
 	End Class
 End Namespace

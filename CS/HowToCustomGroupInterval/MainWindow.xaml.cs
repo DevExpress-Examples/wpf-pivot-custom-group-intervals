@@ -21,17 +21,5 @@ namespace HowToBindToMDB {
             salesPersonDataAdapter.Fill(salesPersonDataTable);
             pivotGridControl1.CollapseAllRows();
         }
-
-        private void pivotGridControl1_CustomGroupInterval(object sender, 
-                PivotCustomGroupIntervalEventArgs e) {
-            if(!object.ReferenceEquals(e.Field, fieldProductGroup)) return;
-            string productName = Convert.ToString(e.Value);
-            if(productName[0] < 'F')
-                e.GroupValue = "A-E";
-            else if(productName[0] > 'E' && productName[0] < 'T')
-                e.GroupValue = "F-S";
-            else if(productName[0] > 'S')
-                e.GroupValue = "T-Z";
-        }
     }
 }
