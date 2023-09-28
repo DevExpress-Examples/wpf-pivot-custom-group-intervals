@@ -9,7 +9,7 @@
 This example shows how to implement custom group intervals in Pivot Grid to group axis values.
 
 <!-- default file list -->
-## Files to Look at
+## Files to Review
 
 * [MainWindow.xaml](./CS/HowToCustomGroupInterval/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/HowToCustomGroupInterval/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/HowToCustomGroupInterval/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/HowToCustomGroupInterval/MainWindow.xaml.vb))
